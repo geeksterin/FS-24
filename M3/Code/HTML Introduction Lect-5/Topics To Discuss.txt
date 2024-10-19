@@ -1,0 +1,41 @@
+"Web Basics
+-        3- tier architecture (completed)
+-        Page Inspector
+
+INSTALLATION OF VS-CODE and why we are using this IDE only
+-         prettier
+-         live server
+-         lorem
+(already done)
+
+What is HTML (An overview of history with definition)
+
+
+
+HTML  hierarchy
+- doctype html
+- head tag (title and meta tag) meta tag will learn with time
+- body tag
+
+
+Tags vs Elements
+
+Basic tags
+- headig tag
+- paragraph
+- div tag
+- br
+- pre
+- hr
+- lists with type attribute
+- link tag overview     
+
+Attributes (class, id)      will discuss this with css
+Nesting of Elements 
+Comments"
+
+block and inline Elements
+b tag
+strong tag
+i tag
+em tag
