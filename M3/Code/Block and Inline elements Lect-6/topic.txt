@@ -1,0 +1,35 @@
+"Block and Inline HTML
+•        Difference between block vs inline elements ( done )
+•        Intro to inline tags ( done )
+1.        Links ( Inter navigation vs Intra navigation) ( done )
+2.        Image tag (scr, alt height, width) ( done )
+3.        strong/b tag and em/i tag with their difference in terms of SEO(small intro of SEO) ( done )
+
+
+HTML Table
+•        table tag (Tags: caption,table,thead,tbody,tfoot,tr,th,td) (Attributes: frame, rules, cell-padding, cell-spacing, colspan, row span)"
+
+
+
+"HTML form
+•        What is forms in HTML & why it is used
+•        Form elements (input, label, select/option, textarea, fieldset,legend, 
+•        Input types 
+1.        text
+2.        number
+3.        tel
+4.        button
+5.        password
+6.        checkbox
+7.        color 
+8.        radio
+9.        email
+10.       file
+11.       image
+12.       date
+13.       datetime-local
+14.       time
+15.       reset 
+16.       submit
+
+Form attributes"
