@@ -1,0 +1,11 @@
+HTML Table
+•        table tag (Tags: caption,table,thead,tbody,tfoot,tr,th,td) (Attributes: frame, rules, cell-padding, cell-spacing, colspan, row span)" ( done )
+
+
+semantic tags
+    header
+    footer
+    nav
+    article
+    section
+    aside
