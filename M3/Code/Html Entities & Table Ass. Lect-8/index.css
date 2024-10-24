@@ -1,0 +1,49 @@
+/* div{
+    border: 2px solid green;
+} */
+
+/* p{
+    border: 2px solid yellow;
+}
+
+.blue-border{
+    border: 2px solid blue;
+}
+
+.yellow-border{
+    border: 2px solid yellow;
+}
+
+#note-1{
+    background-color: aqua;
+}
+
+
+div{
+    background-color: red;
+}
+
+.pink-bg-color{
+    background-color: pink;
+}
+
+#heading{
+    background-color: greenyellow;
+} */
+
+
+p{
+    background-color: red;
+}
+
+div p{
+    background-color: yellow;
+}
+
+span{
+    background-color: green;
+}
+
+div span{
+    background-color: blue;
+}
