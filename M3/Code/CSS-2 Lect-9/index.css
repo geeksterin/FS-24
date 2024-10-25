@@ -1,0 +1,138 @@
+.container {
+    border: 2px solid blue;
+    background-color: yellow;
+    height: 100px;
+    width: 500px;
+    /* Top Right Bottom Left  */
+    /* padding: 50px 0px 0px 50px; */
+    /* padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding: 50px 40px 0px 30px; */
+    /* 
+        top 50px
+        bottom 0px
+        left 30px
+        right 40px
+     */
+
+    /* 
+        top & bottom 100px
+        left & right 200px
+      */
+    /* vertical horizantal */
+    /* padding: 100px 200px ;
+    margin: 100px; */
+
+    /* 
+        top => 50px
+        left & right 100px
+        bottom => 75px
+     */
+    /* Top Horizantal Bottom */
+    padding: 50px 100px 75px;
+}
+
+/* padding => gap between box and its child */
+/* margin => gap between box and its parent */
+
+/* *{
+    box-sizing: border-box;
+} */
+
+/* .container-1{
+    border: 2px solid red;
+    background-color: pink;
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+}
+
+.container-2{
+    border: 2px solid red;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+} */
+
+/* .content{
+    border: 2px solid red;
+    background-color: yellow;
+    color: blue;
+    font-size: 100px;
+} */
+
+/* #content-id{
+    color: blue;
+}
+
+.content{
+    color: red;
+} */
+
+/* p[myAttr] {
+    color: red;
+} */
+
+/* 
+    tag selectior
+    attribute selector
+    class selector
+    id selector
+ */
+
+/* div p {
+    color: red;
+} */
+
+/* p{
+    color: red;
+}
+*{
+    color: blue;
+} */
+
+/* span,li{
+    color: green;
+} */
+
+/* li{
+    color: green;
+} */
+
+/* p[attr="def"]{
+    color: red;
+} */
+
+/* *{
+    border: 2px solid red;
+} */
+
+/* Descendant Selector */
+/*  design p tag which is inside div tag*/
+/* div p{
+    background-color: green;
+} */
+
+/* Child Selectors */
+/* design p tag which is child of div tag */
+/* div>p{
+    color: red;
+} */
+
+/* p tag which is neighbour of div should have red font color */
+/* design each p tag which is adjecent(below) div tag. */
+div + p{
+    color: red;
+}
+
+/* p tag which is neighbour of section should have green bg-color */
+/* design each p tag which is adjecent(below) section tag. */
+/* section + p {
+    background-color: green;
+} */
+
+div ~ p{
+    background-color: yellow;
+}
