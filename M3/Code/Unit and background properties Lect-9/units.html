@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .parent {
+            border: 5px solid red;
+            /* height: 200px; */
+            height: 500px;
+            font-size: 1em;
+            /* width: 200px; */
+            /* width: 100vw; */
+        }
+
+        /* 100vh => 1500px */
+        /* 100vw => 2000px */
+
+        
+        .child {
+            margin: 100px;
+            border: 2px solid green;
+            height: 200px;
+            font-size: 2rem;
+            /* width: 50vw; */
+            /* 100px */
+            /* height: 75vh;
+            width: 75vw; */
+        }
+
+        .grand-child {
+            border: 2px solid blue;
+            height: 50%;
+            /* 50px */
+        }
+        .container{
+            border: 5px solid blue;
+            height: 500px;
+        }
+        .child-container{
+            border: 5px solid red;
+            width: 900px;
+            height: 200px;
+            padding: 50px;
+            margin: 20px;
+            /* box-sizing: border-box; */
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="parent">
+        This is parent div tag.
+        <div class="child">
+            This is child div tag.
+            <div class="grand-child"></div>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="child-container">
+
+        </div>
+    </div>
+</body>
+
+</html>

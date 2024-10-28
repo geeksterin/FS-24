@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 100px;
+        }
+
+        .container:hover {
+            background-color: red;
+        }
+
+        .btn-sbmt:hover {
+            background-color: greenyellow;
+            cursor: pointer;
+        }
+
+        .btn-sbmt:active {
+            background-color: blue;
+        }
+
+        input:focus {
+            border: 2px solid blue;
+            background-color: yellow;
+        }
+
+        input:hover {
+            background-color: green;
+        }
+
+        ul li:first-child {
+            font-weight: bold;
+        }
+
+        ul li:last-child {
+            color: red;
+        }
+
+        /* ul li:nth-child(even) {
+            background-color: lightgray;
+        }
+        ul li:nth-child(odd) {
+            background-color: lightblue;
+        }
+        ul li:nth-child(2n+2) {
+            background-color: yellow;
+        } */
+        /* ul li:nth-child(5n+2) {
+            color: red;
+        } */
+        /* p::first-letter{
+            font-size: 2em;
+            color: red;
+         }
+         p::first-line{
+            font-size: large;
+            color: green;
+         } */
+        /* div>p { 
+            color: red;
+        } */
+        /* .btn:hover + .abc {
+
+            color: blue;
+            background-color: yellow;
+
+        } */
+
+        .hover-div {
+            background-color: red;
+            /* Set the default background color */
+            padding: 10px;
+        }
+
+        /* Change div background when button is hovered */
+        .hover-button:hover~.hover-div {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+
+    </div>
+    <button class="btn-sbmt">Submit</button>
+    <input placeholder="this is placeholder" type="text">
+    <ul>
+        <li>asefgwerg</li>
+        <li>second</li>
+        <li>third</li>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quasi, quia voluptate voluptatem et tempore laudantium voluptatum eveniet deserunt vitae non, ratione esse perspiciatis accusantium repudiandae cum! Quis, obcaecati quod?
+    </p> -->
+    <!-- <div>
+        this is div tag.
+        <p>this is child of div tag which is p tag.</p>
+        <section>
+            <p>this is p tag present inside section tag.</p>
+        </section>
+    </div>
+    <p>this is p tag.</p> -->
+    <!-- <div class="abc">
+        this is div
+    </div>
+    <button class="btn">submit</button> -->
+
+
+    <div class="hover-div">
+        This is div
+    </div>
+    <button class="hover-button">Submit</button>
+</body>
+
+</html>
