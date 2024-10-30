@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 5px solid black;
+            /* margin-top: 200px; */
+            height: 5000px;
+            background-color: lightcyan;
+            /* position: relative; */
+        }
+        .container-2{
+            background-color: lightpink;
+            height: 2000px;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+        .img4{
+            position: fixed;
+            /* bottom: 1%;
+            right: 50px; */
+            z-index: 1000;
+        }
+        .img3{
+            position: sticky;
+            top: 0px;
+            left: 5px;
+        }
+
+        /* .img2{
+            position: absolute;
+            top: 100px;
+        }
+        .img4{
+            position: relative;
+            top: 100px;
+        } */
+        /* .img2{
+            position: relative;
+            top: 100px;
+            left: 200px;
+            z-index: -1;
+            margin-top: 100px;
+        }
+
+        .img1{
+            position: relative;
+            left: 100px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="img1" style="border: 5px solid red;" src="image11.png" alt="">
+        <img style="border: 5px solid green;" class="img2" src="image22.png" alt="">
+        <img class="img3" style="border: 5px solid pink;" src="image33.png" alt="">
+        <img class="img4" style="border: 5px solid aqua;" src="image44.png" alt="">
+        <img class="img5" style="border: 5px solid red;" src="image55.png" alt="">
+    </div>
+    <div class="container-2"></div>
+</body>
+
+</html>

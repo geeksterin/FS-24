@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        img {
+            margin: 10px;
+        }
+
+        .image2 {
+            position: absolute;
+            top: 200px;
+        }
+
+        /* let's I want that img-3 should come 100px down from top but it can't be directly applied
+            reason: on position static this property will not work */
+            .sp{
+                vertical-align: super;
+            }
+            .sb{
+                vertical-align: sub;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="image1.png" class="image1" alt="first image" width="300px" height="300px">
+        <img src="image2.png" class="image2" alt="first image" width="300px" height="300px">
+        <img src="image3.png" alt="first image" width="300px" height="300px">
+        <img src="image4.png" alt="first image" width="300px" height="300px">
+        <!-- <img src="image5.png" alt="first image" width="300px" height="300px">
+        <img src="image6.png" alt="first image" width="300px" height="300px"> -->
+        <p>(a+b)<span class="sp">2</span></p>
+        <p>H<span class="sb">2</span>O</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: #4fa04f;
+        }
+
+        h1+a {
+            color: #a04f4f;
+        }
+
+        /* whenevery I hover on h1 apply this styling on just below anchor tag */
+        .heading:hover+.button {
+            /* color: #4f4fd0; */
+            border: 5px solid red;
+        }
+
+        .button:hover+.another-heading {
+            background-color: #444;
+        }
+        .subscript{
+            vertical-align: sub;
+        }
+        .superscript{
+            vertical-align: super;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1 class="heading">Heading</h1>
+    <a class="button" href="#">The &quot;Button&quot;</a> -->
+    <!-- <a href="#">OIHEFOIWHEROI</a> -->
+    <!-- <h1 class="another-heading">Another Heading</h1> -->
+
+    <p>H<span class="subscript">2</span>O|sub</p>
+    <p>(a+b)<span class="superscript">2</span>|super</p>
+    <p>(a+b)<span style="vertical-align: baseline;">2</span>|baseline</p>
+    <p>(a+b)<span style="vertical-align: text-bottom;">2</span>|text-bottom</p>
+    <p>(a+b)<span style="vertical-align: text-top;">2</span>|text-top</p>
+</body>
+
+</html>
