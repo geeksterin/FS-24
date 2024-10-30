@@ -1,0 +1,11 @@
+!important
+color Property
+    color by name
+    color by hex
+    color by rgb
+text Property
+display
+font
+
+
+vertical-align: top;
