@@ -1,0 +1,30 @@
+display : flex
+image from MDN
+flex direction
+    row and column
+        in row main-axis is horizontal
+        in column main-axis is vertical
+responsive
+flex-wrap
+    wrap
+    no-wrap
+    wrap-reverse
+                                                                            short-hand-notion
+                                                                                flex-flow
+justify-content
+    place things according to main axis
+align-items
+    place things according to cross axis
+    stretch as value
+        by default it is applied if you haven't given it and if you haven't given height of flex-item
+align-content
+    when you want to manage gap between two lines of flex-item we can use align-content this is used when we use flex-wrap property
+
+flex-item property 
+order
+flex-grow & flex-shirnk
+    works when flex-wrap is no wrap
+short-hand 
+    flex
+align-self
+    wroks on cross axis

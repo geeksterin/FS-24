@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            border: 5px solid aqua;
+            display: flex;
+            height: 1000px;
+            /* width: 10000px; */
+            /*
+                by deafult flex-direction is row 
+                    row, column, row-reverse, column-reverse
+            */
+            /* flex-direction: column; */
+            /* 
+                by deafult flex-wrap is nowrap
+                    nowrap, wrap, wrap-reverse
+            */
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* align-content: center; */
+            
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            font-size: 50px;
+            border: 5px solid black;
+        }
+        #box-1{
+            /* order: 1; */
+            /* align-self: baseline; */
+            background-color: red;
+        }
+        #box-2{
+            /* order: 5; */
+            background-color: blue;
+        }
+        #box-3{
+            background-color: green;
+            /* flex-grow: 10; */
+        }
+        #box-4{
+            background-color: yellow;
+            /* flex-shrink: 5; */
+        }
+        .container-1{
+            border: 5px solid black;
+        }
+        .bx{
+            height: 200px;
+            width: 200px;
+            border: 5px solid red;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="box" id="box-1">1</div>
+        <div class="box" id="box-2">2</div>
+        <div class="box" id="box-3">3</div>
+        <div class="box" id="box-4">4</div>
+    </div> -->
+    <div class="container-1">
+        <div class="bx">1</div>
+        <div class="bx">2</div>
+        <div class="bx">3</div>
+        <div class="bx">4</div>
+    </div>
+</body>
+</html>
