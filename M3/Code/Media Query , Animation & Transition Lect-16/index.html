@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /* @media screen and (max-width: 800px) and (min-width: 420px) {
+            .container {
+                background-color: red;
+            }
+            }
+            
+            @media (max-width: 420px) {
+                .container {
+                    background-color: blue;
+                    }
+                    } */
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container {
+            border: 5px solid black;
+            background-color: aqua;
+            height: 300px;
+            /* padding: 20% 0; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .item {
+            background-color: yellow;
+            height: 150px;
+            width: 25%;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        @media (max-width: 425px) and (orientation: portrait) {
+            .container {
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 600px;
+            }
+
+            .item {
+                width: 50%;
+            }
+        }
+
+        /* @media (min-width: 768px) */
+        .circle{
+            border: 5px solid black;
+            background-color: yellow;
+            height: 100px;
+            width: 300px;
+            /* margin: 5%; */
+            position: relative;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+            /* ani */
+            /* animation-iteration-count: 1; */
+            /* animation-timing-function: steps(10); */
+            /* border-radius: 100%; */
+            /* transition-property: all;
+            transition-duration: 4s; */
+            /* transition: width 4s, height 8s, background-color 2s; */
+            /* transition-delay: 5s; */
+            /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            /* tra */
+        }
+        @keyframes move {
+            0%{
+                top: 20px;
+                left:0px;
+                background-color:red;
+            }
+            100%{
+                top:20px;
+                left:500px;
+                background-color:aqua;
+            }
+            /* 90%{
+                background-color:pink;
+                top: 20px;
+                left: 0px;
+            }
+            100%{
+                top:0px;
+                left: 0px;
+            } */
+        }
+        /* .circle:hover{
+            height: 80%;
+            width: 80%;
+            background-color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="item">Hello how are you? what are you doing?</div>
+        <div class="item">Hello how are you? what are you doing?</div>
+        <div class="item">Hello how are you? what are you doing?</div>
+    </div> -->
+    <div class="circle"></div>
+</body>
+
+</html>
