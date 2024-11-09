@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-property: all;
+            transition-duration: 4s;
+        }
+
+        .container:hover {
+            transform: rotate(135deg);
+            transform: skew(90deg);
+            transform: translate(500px,500px);
+        } */
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+         }
+         body{
+            height: 100vh;
+            width: 100vw;
+         }
+        .container {
+            border: 5px solid yellow;
+            height: 100%;
+            width: 100%;
+            /* background-image: linear-gradient(black,white); */
+            /* background-image: linear-gradient(to left, red, yellow, green); */
+            /* background-image: url('img-large.jpg');
+            background-repeat: no-repeat; */
+            /* background-position-x: 10px;
+            background-position-y: 10px; */
+            /* background-position: left bottom; */
+            /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+            /* background-size: contain; */
+            /* color: white; */
+            position: relative;
+            background-image: url('img-1.jpg');
+            background-repeat: no-repeat;
+        }
+        img{
+            z-index: -100;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <img src="img-1.jpg" alt=""> -->
+        Hello how are you?
+    </div>
+</body>
+
+</html>

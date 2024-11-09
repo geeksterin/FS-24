@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.hero{
+    /* why we should have bg-img and bg-color  */
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    /* background-image: url('img.jpg'),url('img-1.jpg'); */
+    background-image: url('img-large.jpg');
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x;
+    background-repeat:repeat-y; */
+    /* background-size: cover; */
+    /* background-blend-mode: lighten; */
+    /* background-blend-mode: multiply; */
+    /* border: 5px solid black; */
+    
+    /* color: whitesmoke; */
+    /* padding-top: 200px; */
+    /* padding-bottom: 200px; */
+    /* background-size: 100% 50%; */
+    /* background-position: 10px,top left; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.container{
+    margin: auto;
+    padding: 1rem;
+}
