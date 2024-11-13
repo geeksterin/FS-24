@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+    --background-color: #fbfbfb;
+    --dark-green-color: #113448;
+    --light-green-color: #14bf98;
+    --dark-gray-color: #383535;
+    --light-gray-color: #787976;
+    --white-color: #ffffff;
+    --disabled-color: #e9ecef;
+    --dark-white-color: #dfe5ec;
+    --light-grey-color: #ebe8e8;
+    --light-offwhite-color: #e3dcdc;
+    --form-input-background-color: #2a5d77;
+    --form-input-border-color: #397285;
+    --image-contrast: 60%;
+    --image-grayscale: 120%;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.openDrawer {
+    transform: translateX(-160px);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+input,
+textarea,
+select,
+option,
+li,
+label {
+    font-family: "Open Sans", sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid var(--light-green-color);
+    background-color: var(--light-green-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: all 0.125s ease-in-out;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.3ch;
+}
+
+
+button:hover {
+    background-color: transparent;
+    color: var(--light-green-color);
+}
+
+.section-title {
+    color: var(--light-green-color);
+    text-transform: uppercase;
+    padding: 0.5rem 0px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.green-text {
+    color: var(--light-green-color);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3rem;
+    align-items: center;
+    color: var(--white-color);
+    z-index: 100;
+    backdrop-filter: blur(20px) grayscale(var(--image-grayscale)) contrast(var(--image-contrast));
+}
+
+nav ul .icon {
+    background-color: var(--light-green-color);
+    padding: 0.75rem;
+    cursor: pointer;
+    clip-path: polygon(0 25%, 0 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0);
+}
+
+nav ul .icon:hover {
+    background-color: var(--white-color);
+}
+
+nav ul .icon:hover a {
+    color: var(--light-green-color);
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    transition: all 0.125s ease-in-out;
+}
+
+nav a:visited {
+    color: var(--white-color);
+}
+
+nav a:hover {
+    color: var(--light-green-color);
+}
+
+nav img {
+    height: 4rem;
+    border-radius: 70%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url(Images/lake.jpg);
+    min-height: 90vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+    gap: 1.5rem;
+}
+
+@keyframes changeText {
+    0% {
+        content: "Services";
+    }
+
+    25% {
+        content: "Templates";
+    }
+
+    50% {
+        content: "SOLUTIONS";
+    }
+
+    75% {
+        content: "Services";
+    }
+
+    100% {
+        content: "SOLUTIONs";
+    }
+}
+
+.home h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+.home h1::after {
+    content: " ";
+    /* display: inline-block; */
+    animation: changeText 2s infinite;
+}
+
+.home p {
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+/* .content{
+    display: flex;
+    border: 5px solid black;
+}
+
+.images-container{
+    border: 5px solid red;
+}
+.images-container,.images-container img{
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.images-container img:hover{
+    transform: scale(1.5);
+} */
+
+.intro {
+    padding: 5rem 20vw;
+    background-color: var(--white-color);
+}
+
+.intro .content {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro .content .text {
+    width: 50%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+.intro .content .text h3 {
+    color: var(--dark-gray-color);
+    font-size: 2rem;
+}
+
+.intro .content .text h4 {
+    color: var(--dark-gray-color);
+    line-height: 2rem;
+}
+
+.intro .content .text p {
+    color: var(--light-gray-color);
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.intro .content .images-container {
+    width: 60%;
+    overflow: hidden;
+    border-radius: 5px;
+    filter: grayscale(50%);
+    cursor: pointer;
+}
+
+.intro .content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.intro .content img:hover {
+    transform: scale(1.5);
+}
+
+.intro .skill-list-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.intro .skill-list-container .skill-item {
+    width: 30%;
+    line-height: 1.5rem;
+}
+
+.intro .skill-list-container .skill-item h4 {
+    font-size: 1.5rem;
+    color: var(--dark-gray-color);
+}
+
+.intro .skill-list-container .skill-item p {
+    color: var(--light-gray-color);
+}
+
+.intro .skill-list-container .skill-item span {
+    background-color: var(--light-green-color);
+    color: var(--white-color);
+    padding: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    clip-path: polygon(0 25%, 0 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0);
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.services {
+    padding: 5rem 0;
+}
+
+.services>span {
+    display: block;
+    text-align: center;
+}
+
+.services>h3 {
+    text-align: center;
+    font-size: 1.75rem;
+    color: var(--dark-gray-color);
+}
+
+.services .service-list-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 3rem 20vw;
+    align-items: start;
+}
+
+.services .service-list-container .service-item {
+    width: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border: 1px solid var(--light-grey-color);
+    border-radius: 5px;
+    background-color: var(--white-color);
+}
+
+.services .service-item img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(var(--image-grayscale)) contrast(var(--image-contrast));
+    border-radius: 5px 5px 0 0;
+}
+
+.services .service-item h4 {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    color: var(--dark-gray-color);
+    padding: 0.5rem 2rem;
+}
+
+.services .service-item p {
+    line-height: 1.5rem;
+    color: var(--light-gray-color);
+    padding: 0.5rem 2rem;
+}
+
+.services .service-item ul {
+    line-height: 1.5rem;
+    color: var(--light-gray-color);
+    padding: 0.5rem 2rem;
+    list-style-type: none;
+}
+
+.services .service-item ul li::before {
+    content: "\25a0";
+    color: var(--light-green-color);
+    margin-right: 5px;
+    font-size: 1.25rem;
+}
+
+.services .service-item h6 {
+    font-size: 1.2rem;
+    color: var(--dark-gray-color);
+    text-align: center;
+    padding: 0.5rem 2rem;
+}
+
+.services .service-item h6 span {
+    color: var(--light-green-color);
+}
+
+.services .service-item button {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.services .service-item button:hover {
+    background-color: var(--white-color);
+}
+
+.services .preposition {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: var(--white-color);
+}
+
+.services .preposition img {
+    width: 50%;
+    filter: grayscale(var(--image-grayscale)) contrast(var(--image-contrast));
+    min-height: 35rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.services .preposition .content {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.services .preposition-1 .content {
+    padding: 5rem 20vw 5rem 5rem;
+}
+
+.services .preposition-1 h4 {
+    color: var(--dark-gray-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.125s ease-in-out;
+}
+
+.services .preposition-1 p {
+    color: var(--light-gray-color);
+    padding-left: 3rem;
+}
+
+.services .preposition-1 h4 span {
+    border-radius: 50%;
+    padding: 0 0.6rem;
+    border: 2px solid var(--dark-gray-color);
+    color: var(--dark-gray-color);
+    margin-right: 0.5rem;
+    transition: all 0.125s ease-in-out;
+}
+
+.services .preposition-1 h4.active span {
+    border: 2px solid var(--light-green-color);
+    background-color: var(--light-green-color);
+    color: var(--white-color);
+}
+
+.services .preposition-1 h4:not(.active):hover span {
+    border-color: var(--light-green-color);
+    color: var(--dark-gray-color);
+}
+
+.services .preposition-1 h4.active,
+.services .preposition-1 h4:hover {
+    color: var(--light-green-color);
+}
+
+.services .preposition-2 .content {
+    padding: 5rem 5rem 5rem 20vw;
+}
+
+.services .preposition h3 {
+    font-size: 1.5rem;
+    color: var(--dark-gray-color);
+}
+
+.services .preposition-2 .category-list-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.services .preposition-2 .category-item h3 {
+    color: var(--light-gray-color);
+    font-size: 1.2rem;
+    transition: color 0.125 ease-in-out;
+}
+
+.services .preposition-2 .category-item.active h3,
+.services .preposition-2 .category-item :hover h3 {
+    color: var(--light-green-color);
+    cursor: pointer;
+}
+
+.services .preposition-2 .skill-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.services .preposition-2 .skill-item {
+    color: var(--dark-gray-color);
+    font-size: 1rem;
+}
+
+.services .preposition-2 .skill-item .progress-bar {
+    height: 1.5rem;
+    background-color: var(--light-green-color);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    width: 0;
+}
+
+.services .preposition-2 .skill-item .progress-bar.p-100 {
+    width: 100%;
+}
+
+.services .preposition-2 .skill-item .progress-bar.p-76 {
+    width: 76%;
+}
+
+.services .preposition-2 .skill-item .progress-bar.p-90 {
+    width: 90%;
+}
