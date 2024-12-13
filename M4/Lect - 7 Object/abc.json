@@ -1,0 +1,15 @@
+{
+    "firstName": "Azit",
+    "lastName": "Rana",
+    "age": 22,
+    "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY"
+    },
+    "hobbies": [
+        "Solving DSA Problem",
+        "Learning New Information"
+    ],
+    "is male": true
+}

@@ -1,0 +1,10 @@
+<person>
+    <firstName>Drumil</firstName>
+    <lastName>Akhenia</lastName>
+    <age>23</age>
+    <address>
+        <street>Station Road</street>
+        <city>Dhoraji</city>
+        <state>Gujarat</state>
+    </address>
+</person>
