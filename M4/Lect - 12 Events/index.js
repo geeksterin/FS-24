@@ -33,10 +33,50 @@
 //     });
 // });
 
-const mainTag = document.querySelector(".main");
+// const mainTag = document.querySelector(".main");
 
-mainTag.addEventListener("click", (event) => {
-    if (event.target.getAttribute("myAttribute")) {
-        alert(event.target.getAttribute("myAttribute"));
-    }
-});
+// mainTag.addEventListener("click", (event) => {
+//     if (event.target.getAttribute("myAttribute")) {
+//         alert(event.target.getAttribute("myAttribute"));
+//     }
+// });
+
+// 'use strict'
+
+// // var a = 10;
+// // console.log(a);
+// // var a = 20;
+// // console.log(a);
+// a = 10;
+// console.log(a);
+
+// "use strict";
+// function test() {
+//     console.log(this);
+// }
+// test();
+
+
+// "use strict";
+// function myFunction(a, a) {
+//   // SyntaxError: Duplicate parameter name not allowed in this context
+// }
+
+// let x = 10;
+// delete x; // SyntaxError: Delete of an unqualified identifier in strict mode.
+// console.log(x);
+
+// "use strict";
+// var a = 10;
+// console.log(a);
+// a = '20';
+// console.log(a);
+
+function myFunction() {
+    "use strict";
+    let x = 10;
+    delete x; // SyntaxError: Delete of an unqualified identifier in strict mode.
+    console.log(x);
+
+}
+myFunction();
