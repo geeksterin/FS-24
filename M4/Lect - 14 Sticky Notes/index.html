@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .note {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            height: 300px;
+        }
+
+        #your-notes {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            /* height: 400px; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .note-element {
+            border: 1px solid red;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            align-content: center;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="note">
+        <h2>Note</h2>
+        <textarea name="note" id="note" cols="30" rows="10"></textarea>
+        <input type="color" name="color" value="#de0202" id="color">
+        <button id="addNote">Add Note</button>
+    </div>
+    <h2>Your Notes</h2>
+    <div id="your-notes">
+        <!-- <div class="note-element">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi tenetur velit omnis perferendis ut eveniet repudiandae qui in nemo animi quae iure suscipit, eos quibusdam, aut nam voluptas commodi!</p>
+        </div> -->
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
