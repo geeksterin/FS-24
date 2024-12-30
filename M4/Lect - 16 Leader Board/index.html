@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leader Board</title>
+    <style>
+        .player-data {
+            box-sizing: border-box;
+            margin: 10px;
+            height: 100px;
+            padding: 10px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="First name" id="first-name">
+    <input type="text" placeholder="Last Name" id="last-name">
+    <input type="text" placeholder="Country" id="country">
+    <input type="number" placeholder="Player Score" id="player-score">
+    <button id="add-btn">Add Player</button>
+    <div id="container">
+        <div class="player-data">
+            <p>first last</p>
+            <p>Country</p>
+            <p>Score</p>
+            <button>Delete</button>
+            <button>+5</button>
+            <button>-5</button>
+        </div>
+        <div class="player-data">
+            <p>name</p>
+            <p>Country</p>
+            <p>Score</p>
+            <button>Delete</button>
+            <button>+5</button>
+            <button>-5</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -31,7 +31,7 @@ searchTag.addEventListener('input', (e) => {
 
     tbody.innerHTML = '';
 
-    emojiList.forEach((item,ind) => {
+    emojiList.forEach((item, ind) => {
         if (item.description.includes(searchText) ||
             item.aliases.includes(searchText) ||
             item.tags.includes(searchText)) {
@@ -56,3 +56,16 @@ searchTag.addEventListener('input', (e) => {
         }
     });
 });
+
+const btn = document.querySelector('button');
+const body = document.querySelector('body');
+
+btn.addEventListener('click', () => {
+    if (btn.innerText == 'Light') {
+        btn.innerText = 'Dark'
+    } else {
+        btn.innerText = 'Light'
+    }
+    body.classList.toggle('dark-mode')
+    console.log(body.classList);
+})
