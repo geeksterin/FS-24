@@ -43,12 +43,27 @@ const renderData = (dataList) => {
 }
 
 const filterByName = (currentData, input) => {
-    return currentData.filter(data =>
+    return currentData = currentData.filter(data =>
         data.name.toLowerCase().includes(input.toLowerCase())
     );
 }
 
 const searchTag = document.querySelector('#search');
+const dropdownTag = document.querySelector('#type');
+const resetButton = document.querySelector('#reset');
+
+resetButton.addEventListener('click', () => {
+    window.location.reload();
+});
+
+dropdownTag.addEventListener('change', () => {
+    if (dropdownTag.value.toLowerCase() == 'all') {
+        currentData = arr;
+    } else {
+        currentData = arr.filter(item => item.type.toLowerCase() == dropdownTag.value.toLowerCase());
+    }
+    renderData(filterByName(currentData, searchTag.value));
+});
 
 searchTag.addEventListener('input', () => {
     const inputData = searchTag.value;
