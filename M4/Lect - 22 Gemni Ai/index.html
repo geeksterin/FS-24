@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemni AI</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+            flex-direction: column;
+        }
+
+        #search {
+            width: 400px;
+        }
+
+        #search-btn {
+            background-color: white;
+        }
+
+        #search-btn:hover {
+            cursor: pointer;
+        }
+
+        #answer {
+            border: 2px solid black;
+            height: 500px;
+            width: 500px;
+            overflow: scroll;
+            margin-top: 30px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" placeholder="Search" id="search">
+        <button id="search-btn">Search</button>
+    </div>
+    <div id="answer"></div>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
