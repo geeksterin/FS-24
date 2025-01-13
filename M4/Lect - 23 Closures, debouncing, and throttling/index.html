@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button id="increment-btn">+</button>
+    <span id="counter">0</span>
+    <button id="decrement-btn">-</button> -->
+    <input type="text" id="search">
+    <script src="index.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    whenever user type a char will schedule a backend a call known as A. 
+        A is going to be invoked after 500ms 
+            DONE
+
+            now in between 500ms if user types another char then will cancel out A (previous call) and will schedule a fresh call backend known as B.
+                B is going to be invoked after 500ms from here.
+
+    Ex:
+        users type a char 'c' at time 0ms
+            we schedule a backend a call known as A which is going to be invoked after 500ms.
+                but at 200ms user types another char 'g' so now pervous scheduled backend call will canceled and will reshcudle a newer one which will be called at 700ms.
+
+    Debouncing: we are secheduling a fresh new evening and canceling a prevously scheduled event.
+
+    Throttling: we are not scheduling a fresh new event but just limiting the rate of calling a backend.
+    Ex:
+        Users type a char 'c' at time 0ms
+            we schedule a backend a call known as A which is going to be invoked after 500ms.
+                but at 200ms user types another char 'g' so we will not cancel previous scheduled event also will not sechule new event.
+
+            at time 700ms if user clicks i
+ -->
